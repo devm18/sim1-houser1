@@ -3,30 +3,13 @@ const axios = require('axios');
 let houses = [];
 // let houses = [ 
 //   { 
-//     propertyName: 'The Bachelor Pad - CONTROLLER dummyDATA', 
+//     name: 'The Bachelor Pad - CONTROLLER dummyDATA', 
 //     address: '500 S. Ervay St, #213', 
 //     city: 'Dallas', 
 //     state: 'TX', 
 //     zipcode: '75201'
 //   }
 // ]
-
-// WRONG TO USE HERE: 
-// const getData = (req, res) => {
-//   axios.get("ec2-54-83-4-76.compute-1.amazonaws.com")
-//   .then(response => {
-//     // console.log('getData:', response.data); // check
-//     // houses.push(response.data);
-//     let listOfHouses = response.data.map(elem => {
-//       return Object.assign({}, elem);
-//     });
-//     listOfHouses.forEach(elem => { houses.push(elem); }); 
-//     res.status(200).json(houses)
-//   })
-//   .catch(err => console.log(err));
-// } 
-// // getData(); // call to get initial data  
-
 
 //// CRUD 
 const test = (req,res) => {

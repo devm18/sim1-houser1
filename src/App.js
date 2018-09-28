@@ -1,23 +1,30 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import './CSS/reset.css'; 
+import './CSS/reset.css';
+
+import { Provider } from "react-redux";
+import store from './store'; 
+
 import { BrowserRouter } from 'react-router-dom'; 
 import routes from './routes';
 import Header from './components/Header/Header';
 
+
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <div className="App">
+      <Provider store={store}>
+        <BrowserRouter>
+          <div className="App">
+            
+            <Header /> 
           
-          <Header /> 
-        
-          { routes }
+            { routes }
 
-        </div>
-      </BrowserRouter>
+          </div>
+        </BrowserRouter>
+      </Provider> 
     );
   }
 }

@@ -26,7 +26,6 @@ export default class Wizard extends Component {
   cityInput(e) { this.setState({ city: e.target.value }); }
   stateInput(e) { this.setState({ state: e.target.value }); }
   zipcodeInput(e) { this.setState({ zipcode: e.target.value }); }
-  
 
   render() {
     return (
