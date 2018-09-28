@@ -1,0 +1,16 @@
+.wizardContainer {
+  width: auto;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  background-color: lightblue; 
+  border: 1px solid black;
+}
+
+.inputContainer {
+  width: auto;
+  height: auto;
+  /* margin: 20px; */
+  padding: 20px;
+  border: 1px solid black;
+}
